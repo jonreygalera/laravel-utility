@@ -1,0 +1,42 @@
+{
+    "name": "nms/laravel-utility",
+    "description": "Collection of NMS Helpers/Traits",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Nms\\LaravelUtility\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+          "Nms\\LaravelUtility\\Tests\\": "tests"
+        }
+    },
+    "authors": [
+        {
+            "name": "Jon Rey Galera",
+            "email": "jrg@newmediastaff.com"
+        },
+        {
+            "name": "Frederick Layus Jr.",
+            "email": "ffla@newmediastaff.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php" : "^8.1",
+        "illuminate/support": "^9.0",
+        "orchestra/testbench": "^7.15"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Nms\\LaravelUtility\\LaravelUtilityServiceProvider"
+            ]
+
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    }
+}
